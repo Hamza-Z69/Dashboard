@@ -265,6 +265,7 @@
             background: linear-gradient(135deg, rgba(124,58,237,0.06) 0%, transparent 60%);
             opacity: 0;
             transition: opacity 0.3s;
+            pointer-events: none;
         }
         .client-card:hover {
             border-color: rgba(124,58,237,0.3);
@@ -387,6 +388,8 @@
         .client-links-inner {
             padding: 4px 16px 16px;
             border-top: 1px solid var(--border-subtle);
+            position: relative;
+            z-index: 2;
         }
         .client-links-title {
             font-size: 10px; font-weight: 700;
